@@ -4,3 +4,5 @@
 .tmp/
 .install-test.*
 .installer-tmp.*
+.standalone-test.*
+.standalone-tmp.*

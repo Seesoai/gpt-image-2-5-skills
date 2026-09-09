@@ -1,12 +1,13 @@
 param(
-  [string]$Repository = "yuzhe399/gpt-image-2-5-skills",
+  [string]$Repository = "Seesoai/gpt-image-2-5-skills",
   [string]$Ref = "main",
   [string]$Source,
+  [string[]]$Skill,
   [string]$Destination = $(if ($env:CODEX_SKILLS_DIR) { $env:CODEX_SKILLS_DIR } else { Join-Path $HOME ".agents/skills" })
 )
 
 $ErrorActionPreference = "Stop"
-$skills = @(
+$allSkills = @(
   "gpt-image25-social-design",
   "gpt-image25-product-studio",
   "gpt-image25-precise-edit",
@@ -14,6 +15,10 @@ $skills = @(
   "gpt-image25-knowledge-visual",
   "gpt-image25-brand-series"
 )
+$skills = if ($Skill -and $Skill.Count -gt 0) { @($Skill | Select-Object -Unique) } else { $allSkills }
+foreach ($name in $skills) {
+  if ($allSkills -notcontains $name) { throw "Unknown skill: $name" }
+}
 
 $temp = Join-Path ([System.IO.Path]::GetTempPath()) ("gpt-image-2-5-skills-" + [guid]::NewGuid())
 New-Item -ItemType Directory -Path $temp | Out-Null
@@ -54,7 +59,7 @@ try {
     Copy-Item (Join-Path $sourceSkills $skill) $target -Recurse
   }
 
-  Write-Host "Installed 6 skills to $Destination"
+  Write-Host "Installed $($skills.Count) skill(s) to $Destination"
   if ($backedUp) { Write-Host "Previous versions were moved to $backupRoot" }
   Write-Host 'Restart Codex, then invoke a skill with $gpt-image25-... or /skills.'
 } finally {

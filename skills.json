@@ -1,0 +1,49 @@
+{
+  "schema_version": 1,
+  "package_version": "1.1.0",
+  "repository": "Seesoai/gpt-image-2-5-skills",
+  "skills": [
+    {
+      "name": "gpt-image25-social-design",
+      "path": "plugins/gpt-image-2-5-skills/skills/gpt-image25-social-design",
+      "source_url": "https://github.com/Seesoai/gpt-image-2-5-skills/tree/main/plugins/gpt-image-2-5-skills/skills/gpt-image25-social-design",
+      "install_command": "curl -fsSL https://raw.githubusercontent.com/Seesoai/gpt-image-2-5-skills/main/install.sh | sh -s -- --skill gpt-image25-social-design",
+      "description": "社媒封面、活动海报、课程宣传图与视频封面工作流"
+    },
+    {
+      "name": "gpt-image25-product-studio",
+      "path": "plugins/gpt-image-2-5-skills/skills/gpt-image25-product-studio",
+      "source_url": "https://github.com/Seesoai/gpt-image-2-5-skills/tree/main/plugins/gpt-image-2-5-skills/skills/gpt-image25-product-studio",
+      "install_command": "curl -fsSL https://raw.githubusercontent.com/Seesoai/gpt-image-2-5-skills/main/install.sh | sh -s -- --skill gpt-image25-product-studio",
+      "description": "商品主图、场景图、包装展示与材质细节工作流"
+    },
+    {
+      "name": "gpt-image25-precise-edit",
+      "path": "plugins/gpt-image-2-5-skills/skills/gpt-image25-precise-edit",
+      "source_url": "https://github.com/Seesoai/gpt-image-2-5-skills/tree/main/plugins/gpt-image-2-5-skills/skills/gpt-image25-precise-edit",
+      "install_command": "curl -fsSL https://raw.githubusercontent.com/Seesoai/gpt-image-2-5-skills/main/install.sh | sh -s -- --skill gpt-image25-precise-edit",
+      "description": "局部修改、背景替换、文字替换、修复与多图合成工作流"
+    },
+    {
+      "name": "gpt-image25-sketch-render",
+      "path": "plugins/gpt-image-2-5-skills/skills/gpt-image25-sketch-render",
+      "source_url": "https://github.com/Seesoai/gpt-image-2-5-skills/tree/main/plugins/gpt-image-2-5-skills/skills/gpt-image25-sketch-render",
+      "install_command": "curl -fsSL https://raw.githubusercontent.com/Seesoai/gpt-image-2-5-skills/main/install.sh | sh -s -- --skill gpt-image25-sketch-render",
+      "description": "草图、线稿、涂鸦和界面线框转视觉稿工作流"
+    },
+    {
+      "name": "gpt-image25-knowledge-visual",
+      "path": "plugins/gpt-image-2-5-skills/skills/gpt-image25-knowledge-visual",
+      "source_url": "https://github.com/Seesoai/gpt-image-2-5-skills/tree/main/plugins/gpt-image-2-5-skills/skills/gpt-image25-knowledge-visual",
+      "install_command": "curl -fsSL https://raw.githubusercontent.com/Seesoai/gpt-image-2-5-skills/main/install.sh | sh -s -- --skill gpt-image25-knowledge-visual",
+      "description": "知识卡片、课程配图、概念插画与轻量信息图工作流"
+    },
+    {
+      "name": "gpt-image25-brand-series",
+      "path": "plugins/gpt-image-2-5-skills/skills/gpt-image25-brand-series",
+      "source_url": "https://github.com/Seesoai/gpt-image-2-5-skills/tree/main/plugins/gpt-image-2-5-skills/skills/gpt-image25-brand-series",
+      "install_command": "curl -fsSL https://raw.githubusercontent.com/Seesoai/gpt-image-2-5-skills/main/install.sh | sh -s -- --skill gpt-image25-brand-series",
+      "description": "品牌参考、角色设定与一致性系列素材工作流"
+    }
+  ]
+}
