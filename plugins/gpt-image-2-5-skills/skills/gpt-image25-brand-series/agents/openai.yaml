@@ -1,0 +1,8 @@
+interface:
+  display_name: Image 2.5 品牌与系列素材
+  short_description: 从品牌或角色参考制作一致的系列插画与视觉素材，逐张检查风格和主体
+  default_prompt: 使用 $gpt-image25-brand-series，用我上传的橙色小狐狸作为角色参考，生成学习、思考、庆祝三张独立插画，保持面部特征、配色和线条风格一致。
+  icon_small: assets/icon.svg
+  icon_large: assets/icon.svg
+policy:
+  allow_implicit_invocation: true

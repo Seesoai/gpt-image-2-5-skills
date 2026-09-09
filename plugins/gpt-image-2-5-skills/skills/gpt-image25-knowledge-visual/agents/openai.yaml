@@ -1,0 +1,8 @@
+interface:
+  display_name: Image 2.5 知识卡片与课程配图
+  short_description: 把已确认的知识内容转成易读卡片、概念插画和课件配图，核对事实关系
+  default_prompt: 使用 $gpt-image25-knowledge-visual，为零基础学员生成一张解释“提示词、模型、输出”关系的横版知识卡片，三个术语必须写对，用简洁生活化插画。
+  icon_small: assets/icon.svg
+  icon_large: assets/icon.svg
+policy:
+  allow_implicit_invocation: true

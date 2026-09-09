@@ -1,0 +1,8 @@
+interface:
+  display_name: Image 2.5 商品图工作室
+  short_description: 用商品参考图制作主图、场景图和细节图，保留产品外观与标签信息
+  default_prompt: 使用 $gpt-image25-product-studio，用我上传的保温杯照片做一张干净的商品场景图，放在自然光办公桌上，保留杯型、颜色、标识和杯盖结构。
+  icon_small: assets/icon.svg
+  icon_large: assets/icon.svg
+policy:
+  allow_implicit_invocation: true

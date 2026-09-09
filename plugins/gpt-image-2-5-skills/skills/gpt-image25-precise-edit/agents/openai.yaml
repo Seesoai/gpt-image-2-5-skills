@@ -1,0 +1,8 @@
+interface:
+  display_name: Image 2.5 精准改图
+  short_description: 对现有图片做局部替换、换背景与文字修改，并逐轮检查主体是否漂移
+  default_prompt: 使用 $gpt-image25-precise-edit，把上传图片的背景改成浅灰色，只修改背景，保留人物五官、发型、服装、姿势和构图。
+  icon_small: assets/icon.svg
+  icon_large: assets/icon.svg
+policy:
+  allow_implicit_invocation: true

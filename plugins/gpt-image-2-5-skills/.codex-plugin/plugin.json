@@ -1,0 +1,18 @@
+{
+  "name": "gpt-image-2-5-skills",
+  "version": "1.0.0",
+  "description": "六个面向 GPT Image 2.5 的中文图像生成与编辑工作流 Skill。",
+  "author": {
+    "name": "GPT Image 2.5 Skills Contributors"
+  },
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "GPT Image 2.5 中文技能包",
+    "shortDescription": "海报、商品图、精准改图、草图渲染、知识视觉与品牌系列工作流。",
+    "longDescription": "为常见 GPT Image 2.5 任务提供六个可组合的中文工作流，包含需求提取、模型选择、参考图约束、质量检查与交付规则。",
+    "developerName": "GPT Image 2.5 Skills Contributors",
+    "category": "Creativity",
+    "capabilities": ["image-generation", "image-editing"],
+    "defaultPrompt": "请根据我的图像任务选择合适的 GPT Image 2.5 Skill，并先确认关键约束。"
+  }
+}

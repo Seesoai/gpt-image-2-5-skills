@@ -1,0 +1,8 @@
+interface:
+  display_name: Image 2.5 草图成图
+  short_description: 把手绘草图、线框与布局参考变成完整视觉，保留空间关系和关键结构
+  default_prompt: 使用 $gpt-image25-sketch-render，把上传的桌面收纳盒草图变成柔和自然光下的产品渲染，保留三个隔间的位置与大小关系，使用浅色磨砂材质。
+  icon_small: assets/icon.svg
+  icon_large: assets/icon.svg
+policy:
+  allow_implicit_invocation: true

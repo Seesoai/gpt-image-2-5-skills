@@ -1,0 +1,8 @@
+interface:
+  display_name: Image 2.5 海报与社媒设计
+  short_description: 把主题与中文文案转成海报、社媒封面和活动视觉，并检查排版文字
+  default_prompt: 使用 $gpt-image25-social-design，为零基础 AI 编程公开课生成一张竖版海报，标题“把想法做成作品”，副标题“零基础也能开始”，不要添加日期和价格。
+  icon_small: assets/icon.svg
+  icon_large: assets/icon.svg
+policy:
+  allow_implicit_invocation: true
