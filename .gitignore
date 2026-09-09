@@ -1,0 +1,6 @@
+.DS_Store
+*.zip
+*.tar.gz
+.tmp/
+.install-test.*
+.installer-tmp.*
