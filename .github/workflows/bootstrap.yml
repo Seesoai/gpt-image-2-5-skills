@@ -3,7 +3,7 @@ name: Bootstrap skill pack
 on:
   push:
     paths:
-      - gpt-image-2-5-skills-bootstrap-v2.tar.gz
+      - gpt-image-2-5-skills-bootstrap-v3.tar.gz
 
 permissions:
   contents: write
@@ -17,7 +17,7 @@ jobs:
         shell: bash
         run: |
           set -euo pipefail
-          archive="gpt-image-2-5-skills-bootstrap-v2.tar.gz"
+          archive="gpt-image-2-5-skills-bootstrap-v3.tar.gz"
           if [[ ! -f "$archive" ]]; then
             exit 0
           fi
@@ -28,6 +28,6 @@ jobs:
           set -euo pipefail
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add -A -- . ':!gpt-image-2-5-skills-bootstrap-v2.tar.gz' ':!.github/workflows/bootstrap.yml'
+          git add -A -- . ':!gpt-image-2-5-skills-bootstrap-v3.tar.gz' ':!.github/workflows/bootstrap.yml'
           git commit -m "Publish complete GPT Image 2.5 skill pack"
           git push
