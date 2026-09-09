@@ -1,0 +1,35 @@
+name: Bootstrap skill pack
+
+on:
+  push:
+    paths:
+      - gpt-image-2-5-skills-bootstrap.tar.gz
+
+permissions:
+  contents: write
+
+jobs:
+  unpack:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Unpack repository source
+        shell: bash
+        run: |
+          set -euo pipefail
+          archive="gpt-image-2-5-skills-bootstrap.tar.gz"
+          if [[ ! -f "$archive" ]]; then
+            exit 0
+          fi
+          tar -xzf "$archive"
+          rm "$archive"
+          rm ".github/workflows/bootstrap.yml"
+      - name: Commit unpacked source
+        shell: bash
+        run: |
+          set -euo pipefail
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A
+          git commit -m "Publish complete GPT Image 2.5 skill pack"
+          git push
